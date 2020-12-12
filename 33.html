@@ -1,0 +1,75 @@
+<html>
+   <head>
+     <style>
+	 .ab{
+	 width:45%;
+     text-align:center;
+	 height:150px;
+     float:left;
+	 border:12px outset red;
+	 }
+	 .ab1{
+	 width:45%;
+     text-align:center;
+	 height:330px;
+     float:left;
+	 border:12px outset red;
+	 }
+	  h1:hover:not(.active){
+     background-color:pink;
+	 height:32px;
+	 width:30%;
+	 }
+	 </style>
+   </head>
+    <body>
+	 <h1 onclick="a()">log in</h1>
+     <h1 onclick="a1()">Create account</h1>
+     <h5 id="b" class="ab" style="display:none;">Fill your user name and password
+       <form> 
+        <p>
+	      <pre>
+       user Name& Gmail Id:<input type="test&email" id="name&mail"name="name&mail"> <br>
+       password<input type="password" id="pass"name="pass"> <br><br>
+    <input type="submit" id="submit"name="submit"value="  login  ">
+           </pre>
+	    </p>
+	    </form>
+	 </h5>
+	   
+   <h5 class="ab1" id="b1" style="display:none;">Fill your information
+     <form>
+	 <p>
+	 <pre>
+     first Name<input type="test" id="name"name="name"> <br>
+     last Name<input type="test" id="name"name="name"> <br>
+     user Name<input type="test" id="name"name="name"> <br>
+	 Gmail Id:<input type="email"id="mail" name="mail"> <br>
+	 Number:<input type="number"id="num" name="num" min="" max=""> <br>
+	 class: <select id="class" name="class"><br>
+     <option value="10th">10th</option>
+     <option value="11th">11th</option>
+     <option value="12th">12th</option><br> 
+     D.O.B :<input type="date"id="dob" name="dob"><br>
+     Gender:
+     male:<input type="radio" name="radio" value="male">
+     female:<input type="radio" name="radio" value="female"><br>
+     <input type="submit" id="submit"name="submit"value="submit">
+	 </p>
+	 </pre>
+	 </form>
+    </h5>
+	   <script>
+	   function a(){
+	         document.getElementById("b").style.display="block";
+			 document.getElementById("b1").style.display="none";
+	   }
+	   </script>
+	   <script>
+	   function a1(){
+	         document.getElementById("b1").style.display="block";
+			 document.getElementById("b").style.display="none";
+	   }
+	   </script>
+	</body>
+</html>

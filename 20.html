@@ -1,0 +1,41 @@
+<html>
+<body>
+<style>
+ul{
+    margin:1%;
+	pidding:10%;
+	width=100%;
+	list-style-type:none;
+	overflow:hidden;
+	background-color:#333;
+}
+li{
+      float:left;
+      border-right:3px solid #bbb
+}
+li a{
+   display:block;
+   color:white;
+   padding: 9px 10px;
+   text-decoration:none;
+   text-align:center;
+}
+li a:hover:not(.active){
+     background-color:pink;
+}
+.active{
+      background-color:red;
+}
+li:last-child{
+border-right:none;
+
+}
+</style>
+<ul>
+          <li><a class="active" href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Image</a></li>
+          <li style="float:right"><a href="">Contact</a></li>
+</ul>  
+</body>
+</html>
